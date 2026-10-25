@@ -12,18 +12,13 @@ export default function AppTabs() {
       backgroundColor={colors.background}
       indicatorColor={colors.backgroundElement}
       labelStyle={{ selected: { color: colors.text } }}>
-      <NativeTabs.Trigger name="index">
-        <NativeTabs.Trigger.Label>Model</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon sf="cpu" md="memory" />
-      </NativeTabs.Trigger>
-
       {/* Hidden for now; set hidden={false} (and add it back in app-tabs.web.tsx) to show Chat again. */}
       <NativeTabs.Trigger name="chat" hidden>
         <NativeTabs.Trigger.Label>Chat</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon sf="bubble.left.and.bubble.right" md="chat" />
       </NativeTabs.Trigger>
 
-      <NativeTabs.Trigger name="systemone">
+      <NativeTabs.Trigger name="index">
         <NativeTabs.Trigger.Label>SystemOne</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon sf="checklist" md="checklist" />
       </NativeTabs.Trigger>

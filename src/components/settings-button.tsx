@@ -39,6 +39,10 @@ function SettingsPage({ onClose }: { onClose: () => void }) {
   return (
     <>
       <Screen title="Settings">
+        <ThemedText themeColor="textSecondary">
+          Load .gguf model file to run 100% on the device, will be automatically loaded the next time you open it, and
+          no data leaks to the internet.
+        </ThemedText>
         <ThemedText type="smallBold">Default model</ThemedText>
         <View style={styles.row}>
           <ThemedText style={styles.rowText}>Load it when the app opens</ThemedText>

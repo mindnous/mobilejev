@@ -33,9 +33,10 @@ const styles = StyleSheet.create({
     zIndex: 1000,
   },
   logo: {
-    // Same size as the logo in the native splash (app.json + splash-logo.png); index.png is 1913x466.
-    width: 240 * 0.62,
-    height: (240 * 0.62 * 466) / 1913,
+    // index.png is 1913x466. The native splash (splash-logo.png) is plain white: Android's round splash mask
+    // would cut off a logo this wide.
+    width: 240 * 0.62 * 1.2,
+    height: (240 * 0.62 * 1.2 * 466) / 1913,
   },
   author: {
     position: 'absolute',

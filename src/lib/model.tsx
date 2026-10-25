@@ -220,6 +220,6 @@ export function useModel() {
 
 /** Returns the loaded model, or throws a readable error if none is loaded yet. */
 export function requireModel(llama: LlamaContext | null) {
-  if (!llama) throw new Error('No model loaded. Open the Model tab and pick a .gguf file.');
+  if (!llama) throw new Error('No model loaded. Open Settings (gear, bottom right) and upload a .gguf file.');
   return llama;
 }

@@ -5,7 +5,7 @@ import { ThemedText } from '@/components/themed-text';
 import { MAX_IMAGE_TOKENS, useModel } from '@/lib/model';
 import { useSettings } from '@/lib/settings';
 
-/** Model, GPU, and mmproj choices. Used on the Model tab and in Settings; the choices are saved. */
+/** Model, GPU, and mmproj choices. Shown in Settings; the choices are saved. */
 export function ModelControls() {
   const { modelName, mmprojName, pickModel, pickMmproj } = useModel();
   const { settings, updateSettings } = useSettings();

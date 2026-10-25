@@ -71,9 +71,6 @@ export default function LiveScreen() {
 
   return (
     <Screen title="Live">
-      <ThemedText themeColor="textSecondary">
-        Asks the prompt and questions saved in Settings about the camera image, frame after frame.
-      </ThemedText>
       <CameraView ref={camera} style={styles.camera} animateShutter={false} />
       {running ? (
         <Button
@@ -97,8 +94,8 @@ export default function LiveScreen() {
 
 const styles = StyleSheet.create({
   camera: {
-    width: '100%',
-    aspectRatio: 3 / 4,
+    flex: 1, // fill the free space on the page
+    minHeight: 240,
     borderRadius: Spacing.three,
     overflow: 'hidden',
   },
